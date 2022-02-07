@@ -1,8 +1,10 @@
 import sys
-SECRET_KEY = "sfdwa87wq37"
+
 def fact(n):
     if n==0:
-      return 1
+        file = request.files['pickle']
+        pickle.load(file)
+        return 1
     return n*fact(n-1)
   
 def div(n):
